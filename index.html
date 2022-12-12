@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Placeholder Text Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Placeholder text generator</h1>
+        <form class="generator-form">
+          <label for="amount">Paragraphs: </label>
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            placeholder="1"
+            min="1"
+            max="9"
+          />
+          <button type="submit" class="generate-btn">Generate</button>
+          <span class="gray">(Enter a value between 1-9)</span>
+        </form>
+      </header>
+
+      <article id="generated-text"></article>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
